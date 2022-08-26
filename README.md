@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Mikael-duru/Stats-preview-card-component.git](https://github.com/Mikael-duru/Stats-preview-card-component.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://mikael-duru.github.io/Stats-preview-card-component/](https://mikael-duru.github.io/Stats-preview-card-component/)
 
 ## My process
 
