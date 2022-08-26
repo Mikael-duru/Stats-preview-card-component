@@ -82,8 +82,9 @@ main {
 
 .hero-bg {
   width: 100%;
-  height: 410px;
+  height: 100%;
   background-color: var(--soft-violet);
+  border-radius: 0 1rem 1rem 0;
 }
 
 .hero-bg .hero {
@@ -91,8 +92,7 @@ main {
   mix-blend-mode: multiply;
   opacity: 80%;
   width: 100%;
-  height: 100%;
-  border-radius: 0 1rem 1rem 0;
+  height: 410px;
 }
 
 .hero-text {
@@ -159,7 +159,7 @@ main {
     width: 940px;
   }
   
-  .hero {
+  .hero-bg .hero {
     height: 330px;
   }
   
@@ -190,11 +190,14 @@ main {
     flex-direction: column;
     gap: 0rem;
   }
-
-  .hero {
-    background: hsla(277, 64%, 61%, .8) url(./images/image-header-mobile.jpg) no-repeat center/contain;
-    height: 235px;
+  
+  .hero-bg {
     border-radius: 1rem 1rem 0 0;
+  }
+
+  .hero-bg .hero {
+    background: url(./images/image-header-mobile.jpg) no-repeat center/contain;
+    height: 235px;
   }
 
   .hero-text {
