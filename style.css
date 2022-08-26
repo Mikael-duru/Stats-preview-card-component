@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+:root {
+  /* Main bg-color */
+  --very-dark-blue: hsl(233, 47%, 7%);
+
+  /* Card bg-color */
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+
+  /* Accent color */
+  --soft-violet: hsl(277, 64%, 61%);
+
+  /* Main heading and Stats colors */
+  --white: hsl(0, 0%, 100%);
+
+  /* Main Paragraph color */
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+
+  /* Stat heading color */
+  --slightly-transparent-white-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 55%;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+
+/* General styles */
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: var(--slightly-transparent-white);
+  background-color: var(--very-dark-blue);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-heading,
+.stats {
+  color: var(--white);
+  font-weight: 700;
+}
+
+.accent {
+  color: var(--soft-violet);
+}
+/* General ends */
+
+
+/* Main section */
+main {
+  margin-bottom: 4rem;
+}
+
+.card {
+  width: 1122px;
+  background-color: var(--dark-desaturated-blue);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+
+.hero {
+  background: hsla(277, 64%, 61%, .8) url(./images/image-header-desktop.jpg) no-repeat center/contain;
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 410px;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.hero-text {
+  margin: 7.5rem 10rem 5rem 7.5rem;
+}
+
+.hero-text .main-heading {
+  font-size: 4.1rem;
+}
+
+.hero-text p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 3rem 0 4.5rem;
+  padding-right: 5rem;
+}
+
+.stats-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7.1rem;
+}
+
+.stats-flex .stats-wrapper {
+  text-transform: uppercase;
+  margin-top: 2.4rem;
+}
+
+.stats-flex .stats-wrapper .stats {
+  font-size: 2.9rem;
+  margin-bottom: .8rem;
+}
+
+.stats-flex .stats-wrapper .stats-heading {
+  font-size: 1.5rem;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  color: var(--slightly-transparent-white-headings);
+}
+/* Main ends */
+
+
+/* Footer section */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* Footer ends */
+
+
+
+
+/* Responsive Styles */
+
+/* Screen size below 768px */
+@media screen and (max-width: 768px) {
+  
+  .card {
+    width: 940px;
+  }
+  
+  .hero {
+    height: 330px;
+  }
+  
+  .hero-text {
+    margin: 3.2rem 5rem;
+  }
+  
+  .hero-text p {
+    margin: 2rem 0 4.5rem;
+  }
+  
+  .stats-flex .stats-wrapper {
+    margin-top: .4rem;
+  }
+  
+}
+
+
+/* Screen size below 480px */
+@media screen and (max-width: 480px) {
+  
+  html {
+    font-size: 50%;
+  }
+
+  .card {
+    width: 320px;
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .hero {
+    background: hsla(277, 64%, 61%, .8) url(./images/image-header-mobile.jpg) no-repeat center/contain;
+    height: 235px;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .hero-text {
+    margin: 4.8rem 3.8rem 4.5rem;
+    text-align: center;
+  }
+
+  .hero-text .main-heading {
+    font-size: 3.5rem;
+  }
+
+  .hero-text p {
+    margin: 2.1rem 0;
+    padding-right: 0rem;
+  }
+
+  .stats-flex {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  /* Main ends */
+
+}
